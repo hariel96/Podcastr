@@ -1,0 +1,290 @@
+.homepage{
+    //background: var(--rosaClaro); comentario
+    padding: 0 1.5rem;
+    height: calc(100vh - 6.5rem);
+    overflow-y: scroll;
+
+    a, p, span{
+        font-family: Inter;
+        color: whitesmoke; //MUDAR AQUI
+    }
+    
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+}
+
+.latestEpisodes{
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        
+        
+        li{
+            max-width: 26.5rem;
+            background: var(--purple-400); //MUDAR AQUI
+            border: 1px solid var(--gray-100);
+            padding-left: 0.6rem; 
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            border-radius: 1.5rem;
+            position: relative;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 5.5rem;
+                height: 5.5rem;
+                border-radius: 1rem;
+            }
+
+            .episodeDetails{
+                flex: 1;
+                margin-left: 0.5rem;
+                max-width: 70%;
+                a{
+                    display: block;
+                    color: var(--gray-800);
+                    font-family: Lexend, sans-serif;
+                    font-weight: 900;
+                    text-decoration: none;
+                    line-height: 1.2rem;
+                    color: whitesmoke;
+                    font-size: 0.80rem;
+                    white-space: pre-line;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                p{
+                    font-size: 0.875rem;
+                    margin-top: 0.5rem;
+                    margin-right: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-top: 0.5rem;
+                    font-size: 00.875rem;
+    
+                    &:last-child{
+                        margin-left: 0.5rem;
+                        padding-left: 0.5rem;
+                        position: relative;
+    
+                        &::before{
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 2px;
+                            background: #DDD;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+    
+                    }
+                }
+
+                
+            }
+
+            button{       
+                margin-right: 0.8rem;         
+                right: 2rem;
+                bottom: 2rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                background: var(--gray-100);
+                border-radius: 0.675rem;
+                font-size: 0;
+
+
+                transition: filter 0.2s ;
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+
+                &:hover{
+                    filter: brightness(0.9);
+                }
+            }
+        }
+    }
+}
+
+
+
+.allEpisodes{
+    padding-bottom: 2rem;
+    
+
+    table{
+
+        width: 100%;
+
+        th, td{
+            padding: 0.4rem 0.65rem;
+            border-bottom: 1px solid whitesmoke;
+
+            font-family: Inter;
+            color: var(--roxo);
+        }
+        th{
+            color: var(--purple-800);
+            text-transform: uppercase;
+            font: 500 0.75rem "Press Start 2P", sans-serif;
+            text-align: left;
+        }
+
+        td{
+            font-size: 0.875rem;
+
+        }
+
+        a{
+            color: var(--roxo);
+            font-family: Lexemd, sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            line-height: 1.4rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        button{
+            width: 2rem;
+            height: 2rem;
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            border-radius: 0.5rem;
+            font-size: 0;
+
+            transition: filter 0.2s;
+
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            
+            &:hover{
+                filter: brightness(0.95);
+            }
+        }
+    }
+}
+
+
+/*.homepage{
+    background: var(--rosaClaro);
+
+    padding: 0 4rem;
+    height: calc(100vh - 6.5rem);
+    overflow-y: scroll;
+    a, p, span{
+        font-family: Inter;
+        color: whitesmoke; //MUDAR AQUI
+    }
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        color: whitesmoke;
+    }
+}
+
+.latestEpisodes{
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        
+        li{
+            background: var(--purple-400); //MUDAR AQUI
+            border: 1px solid var(--gray-100);
+            padding: 1.25rem;
+            border-radius: 1.5rem;
+            position: relative;
+    
+            display: flex;
+            align-items: center;
+            img{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 1rem;
+            }
+
+        .episodeDetails{
+            flex: 1;
+            margin-left: 1rem;
+            
+            a{
+                display: block;
+                color: var(--gray-100);
+                font-family: Lexend, sans-serif;
+                font-weight: 600;
+                text-decoration: none;
+                line-height: 1.4rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+                max-width: 70%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            span {
+                display: inline-block;
+                margin-top: 0.5rem;
+                font-size: 00.875rem;
+
+                &:first-child{
+                    margin-right: 0.5rem;
+                    padding-right: 0.5rem;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 2px;
+                        background: #DDD;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                    }
+
+                }
+            }
+        }
+        }
+    }
+}
+
+.allEpisodes{
+    background: chartreuse;
+}
+
+*/

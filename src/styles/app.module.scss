@@ -1,0 +1,16 @@
+.wrapper{
+    
+    display: flex;
+    background: linear-gradient(135deg, var(--roxoClaro), var(--rosaClaro), var(--roxoClaro), var(--rosaClaro), var(--roxoClaro), var(--rosaClaro), var(--roxoClaro), var(--rosaClaro));
+    //background: linear-gradient(135deg, var(--green-500), #abf5ca );
+    //background: linear-gradient(135deg, #00d35f, #73b991 );
+
+
+    //background: linear-gradient(155deg, var(--green-500), #80ffaa,var(--green-500), #80ffaa,var(--green-500), #80ffaa );
+    
+    main {
+        // background-color: var(--rosaClaro); COMENTARIO
+        flex: 1;
+        //SOLUCAO PALEATIVA
+    }
+}

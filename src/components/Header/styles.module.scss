@@ -1,0 +1,27 @@
+.headerContainer{
+    background: var(--purple-800);
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    border-bottom: 2px solid whitesmoke;
+    font-family: Inter, sans-serif;
+
+    p{
+        color: whitesmoke;
+        margin-left: 1rem;
+        padding: 0.25rem 0 0.25rem 2rem;
+        border-left: 2px solid whitesmoke;
+        border-right: 2px solid whitesmoke;
+        font-weight: 700;
+        font-size: 0.7rem;
+    }
+
+    span{
+        padding-left: 1rem;
+        color: whitesmoke;
+        margin-left: auto;
+        text-transform: capitalize;
+        font-size: 0.7rem;
+    }
+}
